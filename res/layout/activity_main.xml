@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zhbj.MainActivity" 
+    android:orientation="vertical">
+    
+    <com.example.zhbj.view.MyViewPager
+        android:id="@+id/vp_content_fragment"
+        android:layout_width="fill_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1">    
+    </com.example.zhbj.view.MyViewPager>
+    
+    <RadioGroup
+        android:id="@+id/rg_bottom_tab_container"
+        android:layout_width="fill_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/bottom_tab_bg"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/bottom_table_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_newscenter"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/bottom_table_newscenter_selector"
+            android:text="新闻中心" />
+
+        <RadioButton
+            android:id="@+id/rb_smartservice"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/bottom_table_smartservice_selector"
+            android:text="智能服务" />
+
+        <RadioButton
+            android:id="@+id/rb_govaffairs"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/bottom_table_goveaffirs_selector"
+            android:text="政务" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/bottom_tab"
+            android:drawableTop="@drawable/bottom_table_setting_selector"
+            android:text="设置" />
+    </RadioGroup>
+
+</LinearLayout>

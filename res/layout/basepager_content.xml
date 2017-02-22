@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/title_red_bg"     
+        >
+        <ImageButton android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:background="@android:color/transparent"
+                     android:src="@drawable/img_menu"
+                     android:layout_centerVertical="true"
+                     android:id="@+id/ib_menu"
+            />
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:textColor="@android:color/white"
+                  android:text="默认标题"
+                  android:layout_centerInParent="true"
+                  android:textSize="23sp"
+                  android:id="@+id/tv_pagetitle"
+            />
+             <FrameLayout android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_alignParentRight="true"
+                     android:layout_centerVertical="true"
+                     android:layout_marginRight="10dp"
+                     android:id="@+id/fl_switch_list_grid"
+                     android:visibility="gone"    
+            >
+            <ImageButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/icon_pic_grid_type"
+                         android:background="@android:color/transparent"
+                         android:visibility="gone"
+                         android:id="@+id/ib_grid_btn_newscenter_photos"              
+                />
+             <ImageButton android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:src="@drawable/icon_pic_list_type"
+                         android:background="@android:color/transparent"
+                         android:id="@+id/ib_list_btn_newscenter_photos"        
+                />
+        </FrameLayout>  
+        
+    </RelativeLayout>
+    <FrameLayout android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/fl_container_basepager"
+        ></FrameLayout>
+    
+    
+    
+
+</LinearLayout>
